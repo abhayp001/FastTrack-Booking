@@ -28,6 +28,17 @@ function MainPage() {
               </li>
               <li className="mb-4"> {/* Add margin-bottom here */}
                 <NavLink
+                  to="/main/book"
+                  className={({ isActive }) =>
+                    `block py-3 px-4 flex items-center ${isActive ? 'bg-gray-700' : ''} hover:bg-gray-700 rounded-md transition-all duration-300`
+                  }
+                >
+                  <FaChartLine className="mr-3 text-lg transition-all duration-300 transform hover:scale-110" />
+                  Book Travel
+                </NavLink>
+              </li>
+              <li className="mb-4"> {/* Add margin-bottom here */}
+                <NavLink
                   to="/main/booking"
                   className={({ isActive }) =>
                     `block py-3 px-4 flex items-center ${isActive ? 'bg-gray-700' : ''} hover:bg-gray-700 rounded-md transition-all duration-300`
@@ -48,6 +59,7 @@ function MainPage() {
                   Expense Tracking
                 </NavLink>
               </li>
+             
             </ul>
           </nav>
         </div>

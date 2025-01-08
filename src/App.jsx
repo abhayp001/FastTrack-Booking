@@ -74,6 +74,7 @@ import BookingManagement from './components/BookingManagement';
 import ExpenseTracking from './components/ExpenseTracking';
 import { BookingProvider } from './BookingContext'; // Import the BookingProvider
 import { ExpenseProvider } from './ExpenseContext';
+import BookTravel from './components/BookTravel';
 
 
 function App() {
@@ -87,6 +88,7 @@ function App() {
             <Route path="dashboard" element={<Dashboard />} />
             <Route path="booking" element={<BookingManagement />} />
             <Route path="expenses" element={<ExpenseTracking />} />
+            <Route path="book" element={<BookTravel />} />
           </Route>
         </Routes>
       </Router>
