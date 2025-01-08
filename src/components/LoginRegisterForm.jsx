@@ -318,7 +318,6 @@ function LoginRegisterForm() {
 
   return (
     <div className="flex min-h-screen">
-      {/* Left Side: Full Cover Image */}
       <div
         className="w-1/2 h-screen bg-cover bg-center"
         style={{
@@ -327,7 +326,6 @@ function LoginRegisterForm() {
         }}
       ></div>
 
-      {/* Right Side: Centered Form */}
       <div className="w-1/2 flex items-center justify-center bg-gray-100">
         <div className="w-full max-w-md">
         <h2 className="text-3xl text-gray-800font-semibold text-center mb-6">

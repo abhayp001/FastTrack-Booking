@@ -5,17 +5,15 @@ import { FaTachometerAlt, FaClipboardList, FaChartLine, FaPaperPlane, FaSuitcase
 function MainPage() {
   return (
     <div className="flex h-screen">
-      {/* Sidebar */}
-      <div className="w-64 h-full bg-gray-800 text-white fixed"> {/* Fixed sidebar */}
+      <div className="w-64 h-full bg-gray-800 text-white fixed">
         <div className="p-6 flex flex-col items-center">
-          {/* Title with icon */}
           <h2 className="text-2xl font-bold mb-8 flex items-center">
-            <FaPaperPlane className="mr-2 text-3xl" /> {/* Airplane Icon */}
+            <FaPaperPlane className="mr-2 text-3xl" />
             Fast Track Booking
           </h2>
           <nav className="mt-8 w-full">
             <ul>
-              <li className="mb-4"> {/* Add margin-bottom here */}
+              <li className="mb-4">
                 <NavLink
                   to="/main/dashboard"
                   className={({ isActive }) =>
@@ -26,7 +24,7 @@ function MainPage() {
                   Dashboard
                 </NavLink>
               </li>
-              <li className="mb-4"> {/* Add margin-bottom here */}
+              <li className="mb-4">
                 <NavLink
                   to="/main/book"
                   className={({ isActive }) =>
@@ -37,7 +35,7 @@ function MainPage() {
                   Book Travel
                 </NavLink>
               </li>
-              <li className="mb-4"> {/* Add margin-bottom here */}
+              <li className="mb-4">
                 <NavLink
                   to="/main/booking"
                   className={({ isActive }) =>
@@ -48,7 +46,7 @@ function MainPage() {
                   Booking Management
                 </NavLink>
               </li>
-              <li className="mb-4"> {/* Add margin-bottom here */}
+              <li className="mb-4">
                 <NavLink
                   to="/main/expenses"
                   className={({ isActive }) =>
@@ -65,9 +63,8 @@ function MainPage() {
         </div>
       </div>
 
-      {/* Main content */}
-      <div className="flex-1 ml-64 p-8 bg-gray-100 overflow-y-auto min-w-0"> {/* Adjusted to use min-w-0 */}
-        <Outlet /> {/* This will render the selected route (Dashboard, Booking, Expenses, etc.) */}
+      <div className="flex-1 ml-64 p-8 bg-gray-100 overflow-y-auto min-w-0"> 
+        <Outlet />
       </div>
     </div>
   );

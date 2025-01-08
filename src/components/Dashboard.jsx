@@ -2,9 +2,8 @@ import React from 'react';
 import { FaClipboardList, FaTimesCircle, FaMoneyBillWave, FaBookmark, FaClock } from 'react-icons/fa';
 
 function Dashboard() {
-  const username = 'Buddy'; // Replace with actual username from app state or context
+  const username = 'Buddy';
 
-  // Sample data for the cards
   const stats = {
     totalRequests: 10,
     rejectedRequests: 2,

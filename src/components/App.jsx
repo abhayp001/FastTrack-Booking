@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import BookingManagement from './BookingManagement';
 
 function App() {
-  // State for bookings
   const [bookings, setBookings] = useState([
     {
       id: 1,
@@ -12,7 +11,7 @@ function App() {
       time: '10:00 AM',
       purpose: 'Business',
       price: '$1200',
-      status: 'pending', // Add status for each booking
+      status: 'pending',
     },
     {
       id: 2,
@@ -36,7 +35,6 @@ function App() {
     },
   ]);
 
-  // Function to handle the booking action (accept/reject)
   const handleBookingAction = (booking, action) => {
     if (action === 'accept') {
       setBookings((prevBookings) =>
