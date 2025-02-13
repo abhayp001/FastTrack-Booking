@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); /* Subtle gradient background */
+  }
+  
+  .card {
+    background-color: #fff;
+    width: 320px; /* Slightly wider for better spacing */
+    border-radius: 16px; /* Softer rounded corners */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); /* Deeper shadow for depth */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  }
+  
+  .card-header {
+    background: linear-gradient(135deg, #000000, #434343); /* Gradient for the header */
+    color: #fff;
+    padding: 20px; /* More padding for emphasis */
+    text-align: center;
+  }
+  
+  .card-header h2 {
+    font-size: 22px; /* Larger font size for emphasis */
+    font-weight: 600;
+    letter-spacing: 0.5px; /* Added letter spacing for elegance */
+    margin: 0;
+  }
+  
+  .card-body {
+    padding: 24px; /* More padding for better spacing */
+  }
+  
+  .card-info {
+    margin-bottom: 16px; /* Slightly more margin */
+  }
+  
+  .info-item {
+    margin-bottom: 12px; /* More spacing between items */
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically */
+    font-size: 14px;
+  }
+  
+  .info-label {
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .info-value {
+    font-weight: 400;
+    color: #555; /* Slightly darker for better readability */
+  }
+  
+  .purpose {
+    color: #000; /* Highlight purpose with black */
+    font-weight: 500; /* Bold for emphasis */
+    font-style: italic; /* Italic for a touch of elegance */
+  }
+  
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px; /* More padding */
+    background-color: #f7f7f7;
+    border-top: 1px solid #eee; /* Subtle border for separation */
+  }
+  
+  .accept-btn, .reject-btn {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 12px 24px; /* Larger buttons */
+    border-radius: 8px; /* Softer rounded corners */
+    cursor: pointer;
+    font-size: 14px; /* Slightly larger font */
+    transition: all 0.3s ease;
+    text-transform: uppercase; /* Uppercase text for buttons */
+    letter-spacing: 1px; /* Added letter spacing */
+    font-weight: 500; /* Bold text */
+  }
+  
+  .accept-btn:hover {
+    background: linear-gradient(135deg, #2ecc71, #27ae60); /* Gradient for accept button */
+    transform: scale(1.05); /* Slight scale effect */
+  }
+  
+  .reject-btn:hover {
+    background: linear-gradient(135deg, #e74c3c, #c0392b); /* Gradient for reject button */
+    transform: scale(1.05); /* Slight scale effect */
+  }
